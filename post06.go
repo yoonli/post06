@@ -17,11 +17,11 @@ type UserData struct {
 }
 
 var (
-	Hostname = "192.168.28.150"
-	Port     = 5432
-	Username = "mtsouk"
-	Password = "pass"
-	Database = "go"
+	Hostname = ""
+	Port     = 0
+	Username = ""
+	Password = ""
+	Database = ""
 )
 
 func openConnection() (*sql.DB, error) {
