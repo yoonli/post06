@@ -72,7 +72,7 @@ func exists(username string) int {
 // function to add a user to the database
 // Return new userid
 // -1 if there was an error
-func addUser(d UserData) int {
+func AddUser(d UserData) int {
 	d.Username = strings.ToLower(d.Username)
 	db, err := openConnection()
 	if err != nil {
